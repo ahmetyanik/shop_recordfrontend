@@ -18,7 +18,7 @@ function Homepage({ records, setNewRecord }) {
   }
 
   function postNewRecord() {
-    fetch("http://localhost:3005/records", {
+    fetch("https://shoprecordbackend.herokuapp.com/records", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
