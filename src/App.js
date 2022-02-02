@@ -11,7 +11,7 @@ function App() {
 
 
   async function getRecords() {
-    const response = await fetch("http://localhost:3005/records");
+    const response = await fetch("https://shoprecordbackend.herokuapp.com/records");
 
     const data = await response.json();
 
@@ -19,7 +19,7 @@ function App() {
   }
 
   async function getRecordsTop4() {
-    const response = await fetch("http://localhost:3005/records/top4");
+    const response = await fetch("https://shoprecordbackend.herokuapp.com/records/top4");
 
     const data = await response.json();
 
